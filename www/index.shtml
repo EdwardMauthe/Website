@@ -1,0 +1,248 @@
+<!DOCTYPE html><html lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>MAUTHE</title>
+<!--
+<link rel="stylesheet" href="main.css">
+-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+<style>
+body{
+	background:
+			linear-gradient(0deg, rgba(64, 64, 64, 0.8),rgba(255,255,255,0) 70%),
+			linear-gradient(90deg, rgba(99, 12, 0, 0.8),rgba(255,0,0,0) 70%),
+			linear-gradient(180deg, rgba(12, 98, 13, 0.8),rgba(0,255,0,0) 70%),
+			linear-gradient(270deg, rgba(12, 43, 101, 0.8),rgba(0,0,255,0) 70%);
+	background-attachment: fixed;
+}
+.navbar{
+	border:solid darkgrey;
+}
+.navbar-brand{
+	margin-left:1em;
+}
+.title-text{
+	color: #f3e392;
+	text-shadow:
+			2px 2px #4d3826,
+			0px 4px #000000;
+}
+.dynamic-feature{
+	width: 10rem;
+	height: 10rem;
+	margin: auto;
+}
+.dynamic-text{
+	height:10rem;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	border: solid;
+	background: white;
+}
+@keyframes flashing-block-terminal-cursor-animation{
+	50%{
+		opacity: 0;
+	}
+}
+.flashing-block-terminal-cursor{
+	background: black;
+	width:0.5em;
+	height:1em;
+	animation: flashing-block-terminal-cursor-animation 1.5s step-start infinite;
+}
+.card-body{
+	background: #f3f5d3;
+}
+.card{
+	border:solid;
+	margin:1%;
+	width:23%;
+}
+#Works{
+	padding-bottom: 10vh;
+}
+</style>
+</head><body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<span class="navbar-brand">Edward Mauthe</span>
+	<a class="navbar-brand btn btn-outline-secondary" href="/resume.php">My Resume</a>
+	<!--
+	<div class="collapse navbar-collapse">
+		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li class="nav-item">
+				<a class="nav-link" href="/">Documentation</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/">Programs</a>
+			</li>
+		</ul>
+	</div>
+	-->
+</nav>
+<div class="container">
+	<div id="Feature" class="row" style="height:50vh">
+		<div class="col text-center">
+			<h1 class="title-text">When:Program.Make()</h1>
+			<div class="row">
+				<div class="col">
+					<div class="h1 dynamic-feature">
+						<div class="dynamic-text">
+							<span style="color:blue">Code</span>
+							<span class="flashing-block-terminal-cursor"></span>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="h1 dynamic-feature">
+						<div class="dynamic-text flex-column">
+							<div style="color:lightgreen">
+								<wbr>
+								<span id="TestGood" style="display:none;">&check;</span>
+							</div>
+							<div id="TestText">Test</div>
+							<div style="color:darkred">
+								<wbr>
+								<span id="TestBad" style="display: none">&#10005;</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="h1 dynamic-feature">
+						<div class="dynamic-text flex-column">
+							<div style="color:blueviolet">&#10710;</div>
+							<div id="DeployText">Deploy</div>
+							<div class="progress w-100" style="margin-top:1em">
+								<div id="LoadingBar" class="progress-bar" style="background:blueviolet"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--
+			<h3><?php echo $_SERVER['HTTP_USER_AGENT'] ?></h3>
+			-->
+		</div>
+	</div>
+	<!--
+	<h1 class="text-center" style="padding-bottom: 1em;">My Works</h1>
+	<div class="row">
+		<div class="col-6">
+			<div style="background: aquamarine;margin: 10px;height: 250px;">
+				<h1>Fair Engine</h1>
+				<h5>Extensible 2D/3D Rendering Engine</h5>
+			</div>
+		</div>
+		<div class="col-6" style="margin-top: 50px;height: 250px;background: bisque;">
+			<h1>Codeconn</h1>
+			<h5>In Browser Multiplayer Code Editor</h5>
+		</div>
+	</div>
+	<div class="row" style="margin-top:4em">
+		<div class="col">
+			<div style="background: lawngreen;height: 250px;width:250px;margin-left:350px">
+				<h1>reTool</h1>
+				<h5>Reverse Engineering Visualizer for x86, 8080 and 8008</h5>
+			</div>
+		</div>
+	</div>
+	<h2>See more...</h2>
+	-->
+	<div id="Works" class="row">
+		<div class="col text-center">
+			<h1 class="title-text" style="padding-bottom: 1em;">Some Projects</h1>
+			<div class="d-flex flex-row flex-wrap justify-content-center">
+				<div class="card">
+					<div class="card-body">
+						<h3 class="card-title">Codeconn</h3>
+						<p class="card-text">In Browser Multiplayer Code Editor</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h3 class="card-title">Fair Engine</h3>
+						<p class="card-text">Extensible 2D/3D Rendering Engine</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h3 class="card-title">reTool</h3>
+						<p class="card-text">Reverse Engineering Visualizer for x86, 8080 and 8008</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h3 class="card-title">Langstap</h3>
+						<p class="card-text">Extendible C &amp; LISP parsers generated by a GLR parser</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h3 class="card-title">Redact</h3>
+						<p class="card-text">Text and Hex editor runtime</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h3 class="card-title">Gar</h3>
+						<p class="card-text">x86 Real-Mode Operating System</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--
+<?php echo 'hi'?>
+<?php if(0){ ?>
+<h1>TEST</h1>
+<?php }else{ ?>
+<h1>OVER</h1>
+<?php } ?>
+<?php echo var_dump($_COOKIE) ?>
+<p id="agent"></p>
+-->
+<script>
+/*
+var a=document.getElementById('agent');
+a.innerText=navigator.userAgent;
+*/
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+	/*
+	setInterval(()=>{
+		let which=Math.floor(Math.random()*100)
+		if(which<50){
+			$('#TestGood').fadeIn()
+			$('#TestBad').fadeOut()
+		}else{
+			$('#TestBad').fadeIn()
+			$('#TestGood').fadeOut()
+		}
+	},2000)
+	*/
+	setTimeout(()=>{
+		$('#TestBad').fadeIn()
+		$('#TestText').css('color','darkred')
+		setTimeout(()=>{
+			$('#TestBad').fadeOut()
+			$('#TestGood').fadeIn()
+			$('#TestText').css('color','lightgreen')
+			$('#DeployText').css('color','darkviolet')
+		},2000)
+	},2000)
+	setTimeout(()=>{
+		$('#LoadingBar')
+		.animate({'width':'100%'},2000)
+		$('.flashing-block-terminal-cursor').hide()
+	},4000)
+</script>
+
+</body></html>
