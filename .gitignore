@@ -104,4 +104,4 @@ dist
 .tern-port
 
 #PhpStorm Project
-www/.idea/
+root/.idea/
