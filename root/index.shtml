@@ -237,13 +237,13 @@ a.innerText=navigator.userAgent;
 			$('#TestGood').fadeIn()
 			$('#TestText').css('color','lightgreen')
 			$('#DeployText').css('color','darkviolet')
-		},2000)
+		},3000)
 	},2000)
 	setTimeout(()=>{
 		$('#LoadingBar')
 		.animate({'width':'100%'},2000)
 		$('.flashing-block-terminal-cursor').hide()
-	},4000)
+	},6000)
 </script>
 
 </body></html>
