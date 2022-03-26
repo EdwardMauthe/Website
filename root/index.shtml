@@ -232,10 +232,10 @@ a.innerText=navigator.userAgent;
 		}
 	},2000)
 	*/
-	setTimeout(()=>{
+	setTimeout(function(){
 		$('#TestBad').fadeIn()
 		$('#TestText').css('color','darkred')
-		setTimeout(()=>{
+		setTimeout(function(){
 			$('#TestBad').fadeOut()
 			$('#TestGood').fadeIn()
 			$('#TestText').css('color','lightgreen')
@@ -243,7 +243,7 @@ a.innerText=navigator.userAgent;
 			$('#DeployIcon').show()
 		},3000)
 	},2000)
-	setTimeout(()=>{
+	setTimeout(function(){
 		$('#LoadingBar')
 		.animate({'width':'100%'},2000)
 		$('.flashing-block-terminal-cursor').hide()
