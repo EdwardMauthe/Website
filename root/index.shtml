@@ -114,7 +114,10 @@ body{
 				<div class="col">
 					<div class="h1 dynamic-feature">
 						<div class="dynamic-text flex-column">
-							<div style="color:blueviolet">&#10710;</div>
+							<div>
+								<wbr>
+								<span id="DeployIcon" style="display:none;color:blueviolet">&#10710;</span>
+							</div>
 							<div id="DeployText">Deploy</div>
 							<div class="progress w-100" style="margin-top:1em">
 								<div id="LoadingBar" class="progress-bar" style="background:blueviolet"></div>
@@ -237,6 +240,7 @@ a.innerText=navigator.userAgent;
 			$('#TestGood').fadeIn()
 			$('#TestText').css('color','lightgreen')
 			$('#DeployText').css('color','darkviolet')
+			$('#DeployIcon').show()
 		},3000)
 	},2000)
 	setTimeout(()=>{
