@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -69,7 +70,7 @@ body{
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	<span class="navbar-brand">Edward Mauthe</span>
 	<a class="navbar-brand btn btn-outline-primary" href="/Edward Mauthe Resume.pdf">My Resume</a>
-	<a class="nav-link border border-info fs-5" href="mailto:edward.mauthe201@myci.csuci.edu">Contact: edward.mauthe201@myci.csuci.edu</a>
+	<a id="ContactAddress" class="nav-link border border-info fs-5">Contact:</a>
 	<!--
 	<div class="collapse navbar-collapse">
 		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -220,6 +221,9 @@ a.innerText=navigator.userAgent;
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
+	$('#ContactAddress')
+	.attr('href','mailto:eddmauthe@gmail.com')
+	.text('Contact: eddmauthe@gmail.com')
 	/*
 	setInterval(()=>{
 		let which=Math.floor(Math.random()*100)
