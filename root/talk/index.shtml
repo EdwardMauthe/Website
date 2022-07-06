@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<button onclick="runThat()">run</button>
+<script>
+	function runThat(){
+		navigator.mediaDevices.getUserMedia({audio:true,video:true})
+		.then(val=>{
+			console.log('GOOD')
+			console.log(val)
+		})
+		.catch(err=>{
+			console.log('BAD')
+			console.log(err)
+		})
+	}
+</script>
+</body>
+</html>
