@@ -4,12 +4,18 @@
 </head>
 <body>
 	<button onclick="runThat()">run</button>
+	<video id="ThePicture"></video>
 <script>
 	function runThat(){
 		navigator.mediaDevices.getUserMedia({audio:true,video:true})
 		.then(val=>{
 			console.log('GOOD')
 			console.log(val)
+			const camera=document.getElementById('ThePicture')
+			camera.srcObject=val
+			camera.onloadedmetadata=(e)=>{
+				camera.play()
+			}
 		})
 		.catch(err=>{
 			console.log('BAD')
